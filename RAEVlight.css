@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100&display=swap');
+body {background-color: #d4d4d4;
+     color: #C3073F;
+     font-family: 'Bebas Neue', cursive;
+    
+
+}
+body {
+    transition: 1s;
+}
+a {
+    color: aliceblue;
+    text-decoration: none;
+    
+}
+a{position: relative;}
+a::after {
+    content: "";
+    position:absolute;
+    background:#C3073F;
+    left: 0; bottom: 0;
+    width: 100%; height: 3px;
+    opacity: 0;
+    transition: .3s ease;
+}
+a:hover::after {
+    opacity: 1;
+    transform: translateY(3px);
+}
+
+
+
+.avatar {
+width: 150px;
+border-radius: 100px;
+box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.25)
+}
+.info p {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    letter-spacing: 2px;
+    
+}
+@media (max-weith: 479px)
+{
+.info {display: block;}
+}
+
+
+    
+.container {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+}
+.social {
+background: #950740;
+color: aliceblue;
+padding: 10px 15px;
+
+border-bottom: 4mm ridge #6F2232;
+margin: 20px;
+}
+.card {
+    background-color: #000000;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border-bottom: 1rem solid #C3073F;
+    margin-bottom: 20px;
+}
+.card h1 {
+    margin-bottom: 5px;
+}
+.card label {
+    color: aliceblue;
+}
+.card {
+    text-size-adjust: 12px;
+}
+.form-group label {
+    display: block;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: #222629;
+    border-bottom: solid #C3073F;
+    padding: 10px 10px;
+    outline: none;
+    font-family: inherit;
+}
+.form-group input,
+.form-group textarea {
+    color: aliceblue;
+}
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    background: #C3073F;
+    padding: 15px 20px;
+    border: 2px solid #C3073F ;
+    color: aliceblue;
+    font-family: inherit;
+    cursor: pointer;
+    transition: color 0.4s linear;
+cursor: pointer;
+}
+.btn:hover{
+    color: #222629;}
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #000000;
+    z-index: -1;
+    transition:transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function:cubic-bezier(0.5,1.6,0.4,0.7);
+}
+.btn1::before{
+    transform:scaleX(0);
+
+}
+.btn1:hover::before{
+    transform:scaleX(1);
+}
+.info h1 {
+    font-size: 60px;
+    font-weight: 100;
+}
+.card a {
+    font-size: 20px;
+}
+.wrapper {
+    height: 15vh;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+
+}
+button {
+    padding: 8px;
+    background-color: #000000;
+    border: none;
+    color: aliceblue;
+    border-radius: 3px;
+    font-family: 'Bebas Neue', cursive;
+
+}
+button:hover {
+    background: rgb(0, 0, 0);
+}
+.info p {
+    color: #000000;
+}
+
